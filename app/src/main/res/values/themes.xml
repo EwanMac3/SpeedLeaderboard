@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SpeedLeaderboard" parent="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.SpeedLeaderboard.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.SpeedLeaderboard.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.SpeedLeaderboard.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

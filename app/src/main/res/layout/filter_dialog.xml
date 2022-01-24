@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/sortName"
+            app:layout_constraintTop_toTopOf="@+id/usernameExactMatchSwitch"
+            app:layout_constraintBottom_toBottomOf="@+id/usernameExactMatchSwitch"
+            app:layout_constraintEnd_toStartOf="@+id/usernameExactMatchSwitch"
+            android:importantForAutofill="no"/>
+    <Switch
+            android:text="@string/exact_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/usernameExactMatchSwitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Switch
+            android:text="@string/exact_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/streetNameExactMatchSwitch"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/usernameExactMatchSwitch"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"/>
+    <Switch
+            android:text="@string/exact_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/streetNameExactMatchSwitch2"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/streetNameExactMatchSwitch"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" android:checked="true"
+            android:enabled="false" android:visibility="invisible"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextStreetName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/street_road_name" app:layout_constraintEnd_toStartOf="@+id/streetNameExactMatchSwitch"
+            app:layout_constraintBottom_toBottomOf="@+id/streetNameExactMatchSwitch"
+            app:layout_constraintTop_toTopOf="@+id/streetNameExactMatchSwitch" android:importantForAutofill="no"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextCityName"
+            android:hint="@string/region_city_county_suburb"
+            app:layout_constraintTop_toTopOf="@+id/streetNameExactMatchSwitch2"
+            app:layout_constraintBottom_toBottomOf="@+id/streetNameExactMatchSwitch2"
+            app:layout_constraintStart_toStartOf="parent" android:minHeight="48dp"
+            android:importantForAutofill="no" app:layout_constraintEnd_toEndOf="@+id/streetNameExactMatchSwitch2"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/countrypicker2" android:minHeight="48dp"
+            android:entries="@array/countries"
+            app:layout_constraintTop_toBottomOf="@+id/streetNameExactMatchSwitch2"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/statepicker2" android:minHeight="48dp"
+            android:entries="@array/provinces"
+            app:layout_constraintTop_toBottomOf="@+id/countrypicker2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"/>
+    <TextView
+            android:text="@string/filter_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/filterdialogblurb"
+            android:textAlignment="center" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/statepicker2"
+            android:layout_marginTop="32dp" android:layout_marginEnd="8dp" android:layout_marginStart="8dp"/>
+    <Button
+            android:text="@string/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gofilterbutton"
+            app:layout_constraintTop_toBottomOf="@+id/filterdialogblurb" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

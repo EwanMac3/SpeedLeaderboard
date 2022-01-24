@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Speed Leaderboard</string>
+    <string name="servicechannelname">Driving Mode Service</string>
+    <string name="servicechanneldesc">Notification channel for the service indicator for driving mode.</string>
+    <string name="drivemoderunning">Driving mode is currently active. Tap to return to the app.</string>
+    <string name="waitingforservice" translatable="false">⌛</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="welcomeBanner">Welcome to Speed Leaderboard!</string>
+    <string name="welcomeLoading">Getting ready to log in…</string>
+    <string name="databaseDownloading">Downloading the database…</string>
+    <string name="mapsDownloading">Downloading road data…\n(This may take a few moments)</string>
+    <string name="mapsImporting">Processing road data…</string>
+    <string name="registerMsg">Please choose a username and pick a group to join</string>
+    <string name="usernameBox">Username (ex. Bob)</string>
+    <string name="groupBox">Group (ex. Cool Kids Motor Club)</string>
+    <string name="register">Register</string>
+    <string name="caseSensWarn">*This is case-sensitive!</string>
+    <string name="dbReadFailBanner">Couldn\'t load the database. Check your connection.</string>
+    <string name="googleFail">Google sign-in failed! Trying again…</string>
+    <string name="signUpInProg">Registering, just a moment…</string>
+    <string name="musntBeEmpty">Please enter something…</string>
+    <string name="regSuccess">Registered successfully!</string>
+    <string name="regFail">Failed to register. Try again.</string>
+    <string name="nameInUse">That username is already in use. Pick another.</string>
+    <string name="waitingForDB">The database is not ready yet, please wait…</string>
+    <string name="roadsLabel">Roads</string>
+    <string name="tTrialLabel">Time Trials</string>
+    <string name="speedLeadButton">Per-road speed</string>
+    <string name="roadDiscovButton">browse road list</string>
+    <string name="speedDriveButton">Let\'s Drive!</string>
+    <string name="error">Something went wrong</string>
+    <string name="ttriallistbutton">view time trials</string>
+    <string name="racettrialbutton">Challenge time trial</string>
+    <string name="createttrial">Create time trial</string>
+    <string name="loginmessagelead">Logged in as</string>
+    <string name="loginmessageFrom">from</string>
+    <string name="reloadDB">Refresh database</string>
+    <string name="switchtoKMH">Change to kmh</string>
+    <string name="switchtoMPH">Change to mph</string>
+    <string name="leaveGroup">Leave group</string>
+    <string name="leaveWarn">Leave group? This will not affect your data within this group, and you can re-join as long
+        as nobody joins with the same username while you\'re gone.
+    </string>
+    <string name="leaveBtn">Leave</string>
+    <string name="stayBtn">Stay</string>
+    <string name="startBtn">Start!</string>
+    <string name="leadersBtn">Times</string>
+    <string name="ttrials">Time Trials</string>
+    <string name="readyStCount1">road loaded</string>
+    <string name="readyStCount">roads loaded</string>
+    <string name="next100">Go to next 50</string>
+    <string name="back100">Go to previous 50</string>
+    <string name="filter">Filter</string>
+    <string name="filtering">Hang on, this may take quite a while…</string>
+    <string name="sort">Sort</string>
+    <string name="speed">Speed</string>
+    <string name="mostRecentSpeed">Most recent speed record</string>
+    <string name="mostRecentNew">Most recent new road</string>
+    <string name="sortName">Username</string>
+    <string name="sortRoad">Street/Road</string>
+    <string name="sort_by">Sort by…</string>
+    <string name="reverse_sort_order">Reverse Sort Order</string>
+    <string name="exact_match">Exact Match</string>
+    <string name="filter_warning">Entering a username shows only records from that person. Street name search only
+        displays searches from a specific street. When exact match is off, a partial name will still bring up
+        results. If you enter a city, the country and territory must be selected too. Filtering
+        repeatedly will stack filters. To clear, just go back to the main menu and choose \"Browse Road List\" again.
+    </string>
+    <string name="nullMessage">No data was found</string>
+    <string name="sortingLoadText">Preparing data for view, one moment…</string>
+    <string name="streetNotInDB">Street not found, check connection?</string>
+    <string name="failedDateLoad">Date failed to load</string>
+    <string name="recSet">Record set\ </string>
+    <string name="firstDriven">First driven\ </string>
+    <string name="failNameLoad">User failed to load</string>
+    <string name="loggedInAs">Logged in as\ </string>
+    <string name="inGroup">\ in group\ </string>
+    <string name="map">Map</string>
+    <string name="restoringFilters">Restoring filters</string>
+    <string name="disclaimer">Map data is provided by OpenStreetMap and the OSM Overpass API. Drive responsibly and
+        within your limits. Please respect local laws and use common sense.
+    </string>
+    <string name="findCityMsg">Finding your requested area on the map…</string>
+    <string name="street_road_name">Street/road name</string>
+    <string name="region_city_county_suburb">Region (City/County/Suburb)</string>
+
+    <string name="dmodeLoading">Preparing driving mode…</string>
+    <string name="backBtnDriveMode">Please choose \"Exit Driving Mode\"</string>
+    <string name="locationToast">You must allow precise background location access to continue</string>
+    <string name="currentSpeed">Current speed:\ </string>
+    <string name="waitForSvc">Waiting for GPS connection, move around a bit…</string>
+    <string name="recordsThisSesh">Records set this session:\ </string>
+    <string name="CPRemaining">Checkpoints remaining:\ </string>
+    <string name="exitDModeBtn">Exit Driving Mode</string>
+    <string name="timeLbl">Time:\ </string>
+    <string name="getToStart">Time will start once you reach first checkpoint</string>
+    <string name="mapFollow">Map follow</string>
+    <string name="loadingRoadName">Getting road name…</string>
+    <string name="isNight">false</string>
+    <string name="openstreetmap_contributors">© OpenStreetMap contributors</string>
+    <string name="noRoad">No road detected here, records may not save</string>
+    <string name="uploading">Uploading data</string>
+    <string name="recordsUpload">Data saved! Redirecting…</string>
+    <string name="nextCheckpoint">Next checkpoint</string>
+    <string name="nextCheckpointDesc">Go here to continue the time trial</string>
+    <string name="futureCheckpoint">Future checkpoint</string>
+    <string name="futreCheckpointDesc">You still need to complete previous checkpoints</string>
+    <string name="finishPoint">Finish point</string>
+    <string name="finishPointDesc">Go here after all previous checkpoints to stop the timer</string>
+    <string name="startPoint">Start point</string>
+    <string name="startPointDesc">Go here to start the time trial</string>
+</resources>

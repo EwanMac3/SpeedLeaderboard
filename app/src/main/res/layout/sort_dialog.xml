@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/sortButtonsGroup">
+        <RadioButton
+                android:text="@string/speed"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" android:id="@+id/sortBySpeed"/>
+        <RadioButton
+                android:text="@string/mostRecentSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" android:id="@+id/sortByRecentSpeed"/>
+        <RadioButton
+                android:text="@string/mostRecentNew"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" android:id="@+id/sortByNewRoad"/>
+        <RadioButton
+                android:text="@string/sortRoad"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" android:id="@+id/sortByRoad"/>
+        <RadioButton
+                android:text="@string/sortName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" android:id="@+id/sortByName"/>
+        <Button
+                android:text="@string/reverse_sort_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/reverseOrder"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
